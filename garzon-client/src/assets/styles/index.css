@@ -1,0 +1,131 @@
+@import "tailwindcss";
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Sora:wght@500;600;700&display=swap");
+
+:root {
+  /* Primary blue */
+  --color-primary: #142d72;
+  --color-primary-hover: #10265f;
+  --color-primary-soft: #d6e0ff;
+  --color-primary-border: #7f96e6;
+
+  /* Accent gold */
+  --color-accent: #d4af37;
+  --color-accent-hover: #c19c2f;
+  --color-accent-soft: #f8f1dc;
+  --color-accent-border: #e2c878;
+
+  /* Neutrals */
+  --color-bg: #f4f6fb;
+  --color-section: #eef2f8;
+  --color-surface: #ffffff;
+  --color-surface-alt: #f8fafc;
+
+  --color-text: #0f172a;
+  --color-text-soft: #334155;
+  --color-muted: #64748b;
+  --color-line: #d7deea;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  body {
+    font-family: "Inter", sans-serif;
+    @apply antialiased;
+    background-color: var(--color-bg);
+    color: var(--color-text);
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-family: "Sora", sans-serif;
+    letter-spacing: -0.02em;
+    color: var(--color-text);
+  }
+
+  #root {
+    @apply min-h-screen;
+  }
+
+  .footer-link {
+    @apply text-[var(--color-accent-soft)] transition hover:text-white focus:outline-none focus:ring-2 focus:ring-[var(--color-accent-soft)] focus:ring-offset-2 focus:ring-offset-[var(--color-primary)];
+  }
+}
+
+@layer utilities {
+  /* Backgrounds */
+  .bg-page {
+    background-color: var(--color-bg);
+  }
+
+  .bg-section {
+    background-color: var(--color-section);
+  }
+
+  .bg-surface {
+    background-color: var(--color-surface);
+  }
+
+  .bg-surface-alt {
+    background-color: var(--color-surface-alt);
+  }
+
+  .bg-primary {
+    background-color: var(--color-primary);
+  }
+
+  .bg-primary-soft {
+    background-color: var(--color-primary-soft);
+  }
+
+  .bg-accent {
+    background-color: var(--color-accent);
+  }
+
+  .bg-accent-soft {
+    background-color: var(--color-accent-soft);
+  }
+
+  /* Text */
+  .text-default {
+    color: var(--color-text);
+  }
+
+  .text-soft {
+    color: var(--color-text-soft);
+  }
+
+  .text-muted {
+    color: var(--color-muted);
+  }
+
+  .text-accent {
+    color: var(--color-accent);
+  }
+
+  /* Borders */
+  .border-line {
+    border-color: var(--color-line);
+  }
+
+  .border-primary {
+    border-color: var(--color-primary);
+  }
+
+  .border-primary-soft {
+    border-color: var(--color-primary-border);
+  }
+
+  .border-accent {
+    border-color: var(--color-accent);
+  }
+
+  .border-accent-soft {
+    border-color: var(--color-accent-border);
+  }
+}
