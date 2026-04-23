@@ -55,13 +55,8 @@ const Footer = () => {
               </p>
               <ul className="flex flex-col gap-3 text-sm">
                 <li>
-                  <Link to="/auth/signin" className="footer-link">
-                    Sign In
-                  </Link>
-                </li>
-                <li>
-                  <Link to="/auth/signup" className="footer-link">
-                    Sign Up
+                  <Link to="/profile" className="footer-link">
+                    Profile
                   </Link>
                 </li>
               </ul>

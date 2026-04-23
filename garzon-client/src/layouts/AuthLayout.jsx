@@ -10,7 +10,7 @@ const AuthLayout = () => {
           style={{ backgroundImage: `url(${nubg})` }}
         ></div>
 
-        <main className="flex items-center bg-surface px-6 py-10 sm:px-10 lg:px-16">
+        <main className="flex items-center bg-accent-soft px-6 py-10 sm:px-10 lg:px-16">
           <div className="mx-auto w-full max-w-md">
             <Outlet />
           </div>
